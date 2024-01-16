@@ -22,7 +22,7 @@ const Navbar = () => {
     return (
       <nav className="navbar navbar-expand-lg navbar-light "style={{fontWeight:"bolder"}}>
       <div className="container-fluid">
-          <NavLink activeclassname="active" className="navbar-brand" to="/"><img className="img-fluid" alt="BearNote" style={{height:"2.7rem"}} ></img></NavLink>
+          <NavLink activeclassname="active" className="navbar-brand" >SecretBear</NavLink>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
           </button>
@@ -33,11 +33,7 @@ const Navbar = () => {
                           Home
                       </Button>
                   </li>
-                  <li className="nav-item">
-                      <Button className="nav-link" aria-current="page" component={NavLink} to="/about" variant="text" color="secondary" style={{ textTransform: "none", fontFamily: "'Poppins', sans-serif", fontSize: "0.9rem" }}>
-                          About us
-                      </Button>
-                  </li>
+                  
                   {
                       !localStorage.getItem('token') ?
                           <div className="d-flex">

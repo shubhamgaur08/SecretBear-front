@@ -74,7 +74,7 @@ const Signup = (props) => {
                     <i className="fas fa-key fa-lg me-3 fa-fw"></i>
                     <div className="form-outline flex-fill mb-0">
                           <input type="cpassword" value={credentials.cpassword} onChange={onChange} className="form-control" id="cpassword" name="cpassword" required minLength={5}/>
-                      <label className="form-label" for="form3Example4cd">Repeat your password</label>
+                      <label className="form-label" for="form3Example4cd">Confirm your password</label>
                     </div>
                   </div>
 

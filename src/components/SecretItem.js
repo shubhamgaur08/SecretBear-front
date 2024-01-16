@@ -7,8 +7,8 @@ const SecretItem = (props) => {
     
     
     return (
-        <div className="col-md-3">
-            <div className="card my-3">
+        <div className="row-md-3 h">
+            <div className="card my-2">
                 <div className="card-body">
                     <div className="d-flex align-items-center">
                         

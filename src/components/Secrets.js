@@ -2,8 +2,12 @@ import React, { useEffect, useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import './Secrets.css';
+
 const SubmitSecret = () => {
   const [inputText, setInputText] = useState('');
+
+ 
+
   
 
   const sendToServer = async () => {
@@ -17,7 +21,6 @@ const SubmitSecret = () => {
     });
     const data = await response.json();
     setInputText(''); // Clear the input field
-    // setSecrets(prevSecrets => [...prevSecrets, data.secret]); // Assuming setSecrets is a state setter from a useState hook for secrets
     if (data !== undefined) {
       window.location.reload();
     }
@@ -42,12 +45,18 @@ const SubmitSecret = () => {
            
       <TextField
           required
-          id="outlined-required"
+          id="outlined-multiline-flexible"
           label="share your secrets"
+         
           defaultValue="love"
           type="text"
           value={inputText}
           color='secondary'
+          multiline
+          rows={2}
+          
+          
+          
            onChange={handleInputChange}
         />
         <Button type="submit" variant="contained">SHARE</Button>

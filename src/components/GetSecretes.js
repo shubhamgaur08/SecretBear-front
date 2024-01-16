@@ -32,7 +32,7 @@ const GetSecrets = () => {
 
   return (
     <div className="row">
-      <h1>Show your Secrets</h1>
+      <h1>People's Secrets</h1>
       
         {secrets.map((item, index) => {
           console.log(item);
