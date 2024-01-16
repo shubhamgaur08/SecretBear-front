@@ -10,7 +10,7 @@ const Signup = (props) => {
     }
 
     const handleSubmit = async (e)=>{
-        let host = "http://localhost:5000";
+        let host = "https://secret-bear-backend.vercel.app";
         e.preventDefault();
         const response = await fetch(`${host}/api/auth/createuser`,{
             method: "POST",

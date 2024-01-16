@@ -32,7 +32,7 @@ const GoogleLogin = (props) => {
   let navigate = useNavigate();
 
   const login = async (name, email, uid) => {
-    const response = await fetch("http://localhost:5000/api/GoogleAuth/login", {
+    const response = await fetch("https://secret-bear-backend.vercel.app/api/GoogleAuth/login", {
       method: "POST",
       body: JSON.stringify({
         name,

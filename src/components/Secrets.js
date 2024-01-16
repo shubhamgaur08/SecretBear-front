@@ -11,7 +11,7 @@ const SubmitSecret = () => {
   
 
   const sendToServer = async () => {
-    const response = await fetch('http://localhost:5000/api/secrets/submit', {
+    const response = await fetch('https://secret-bear-backend.vercel.app/api/secrets/submit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

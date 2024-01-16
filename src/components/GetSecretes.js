@@ -7,7 +7,7 @@ const GetSecrets = () => {
   useEffect(() => {
     const fetchSecrets = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/Secrets/secrets', {
+        const response = await fetch('https://secret-bear-backend.vercel.app/api/Secrets/secrets', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
