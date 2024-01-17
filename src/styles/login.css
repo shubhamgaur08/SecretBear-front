@@ -9,7 +9,7 @@
     background: linear-gradient(to left, #cca42b, #cd317f);
     }
     .gradient-custom-1{
-        background: linear-gradient(to left, #e2b631, #c2387d);
+        background: linear-gradient(to right, #e2b631, #c2387d);
         font-weight: bold;
         color:rgb(50, 49, 49);
         border: 1px solid rgb(50, 49, 49);
@@ -19,6 +19,7 @@
     .title{
         color: #dd3675;
         font-weight: bold;
+      
     }
 .title2{
     color: #dd3675;

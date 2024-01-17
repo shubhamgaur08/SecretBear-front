@@ -66,20 +66,21 @@ const Login = (props) => {
                     <label className="form-label" htmlFor="form2Example22">Password</label>
                   </div>
 
-                  <div className="text-center pt-1 mb-5 pb-1 ">
+                  <div className="text-center pt-1 mb-4 pb-1 ">
                     <button className="btn btn-primary btn-block  gradient-custom-2 mb-20 w-75" type="submit">LOGIN</button>
                 
-                  </div>
+                  </div>  
+                   <GoogleLogin/>
 
-                  <div className="d-flex align-items-center justify-content-center pb-2">
+                  <div className="d-flex   pb-2 mt-3">
                     <p className="mb-0 me-2">Don't have an account?</p>
                     <Link to="/Signup">
-                    <button type="button"   className="btn btn-outline-danger">SIGN UP</button></Link>
+                    <button type="button"   className="btn btn-outline-danger btn-sm  " >SIGN UP</button></Link>
                   </div>
 
                 </form>
 
-                <GoogleLogin/>
+             
 
               </div>
             </div>
