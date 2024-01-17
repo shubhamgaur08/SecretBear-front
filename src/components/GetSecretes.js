@@ -20,24 +20,26 @@ const GetSecrets = () => {
 
         const json = await response.json();
         const arr=json.map((x)=>x.secret);
-        setSecrets(arr);
-        console.log(arr);
+        setSecrets(arr.reverse());
+        
       } catch (error) {
         console.error('Error fetching secrets:', error);
       }
     };
 
     fetchSecrets();
-  }, []);
+  }, [secrets]);
 
   return (
-    <div className="row">
+    <div className="grid">
       <h1>People's Secrets</h1>
       
+      
         {secrets.map((item, index) => {
-          console.log(item);
+          
            return <SecretItem key={index} data={item} />
         })}
+      
       
     </div>
   ) 

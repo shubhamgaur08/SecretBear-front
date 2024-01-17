@@ -7,15 +7,11 @@ const SecretItem = (props) => {
     
     
     return (
-        <div className="row-md-3 h">
-            <div className="card my-2">
+        <div className="row-md-3">
+            <div className="cardi my-2 ">
                 <div className="card-body">
-                    <div className="d-flex align-items-center">
-                        
-                        
-                        
-                    </div>
-                    <h2 className="card-text">{props.data}</h2>
+                    
+                    <h2 className="card-text text-center">{props.data}</h2>
 
                 </div>
             </div>

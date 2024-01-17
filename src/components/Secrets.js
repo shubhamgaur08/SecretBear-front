@@ -21,9 +21,9 @@ const SubmitSecret = () => {
     });
     const data = await response.json();
     setInputText(''); // Clear the input field
-    if (data !== undefined) {
-      window.location.reload();
-    }
+    // if (data !== undefined) {
+    //   window.location.reload();
+    // }
     
   };
  
@@ -43,22 +43,8 @@ const SubmitSecret = () => {
       <form onSubmit={handleSubmit} className="form">
         <h2 id="title">Share Your Secrets</h2>
            
-      <TextField
-          required
-          id="outlined-multiline-flexible"
-          label="share your secrets"
-         
-          defaultValue="love"
-          type="text"
-          value={inputText}
-          color='secondary'
-          multiline
-          rows={2}
-          
-          
-          
-           onChange={handleInputChange}
-        />
+    
+         <textarea className="form-control" id="exampleFormControlTextarea1" onChange={handleInputChange} placeholder='Type Your Secret Here..' value={inputText}  rows="2" ></textarea>
         <Button type="submit" variant="contained">SHARE</Button>
        </form>
       </div>

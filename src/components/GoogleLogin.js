@@ -29,6 +29,7 @@ const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
 const GoogleLogin = (props) => {
+  const txt=props.txt;
   let navigate = useNavigate();
 
   const login = async (name, email, uid) => {
@@ -45,7 +46,7 @@ const GoogleLogin = (props) => {
       },
     })
     const json = await response.json()
-        console.log(json);
+        
         if (json.success){
             // Save the auth token and redirect
             localStorage.setItem('token', json.authtoken); 
@@ -92,7 +93,7 @@ const GoogleLogin = (props) => {
 
   return (
     <div>
-      <button className="btn btn-primary btn-block  gradient-custom-2 mb-20 " onClick={handleGoogleLogin}>Login with Google</button>
+      <button className="btn btn-primary btn-block  gradient-custom-1 mb-20 " onClick={handleGoogleLogin}>{txt?txt:"Login with Google"}</button>
       {/* <button className="btn btn-primary" onClick={handleLogout}>Logout</button> */}
     </div>
   );

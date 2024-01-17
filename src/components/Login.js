@@ -38,7 +38,7 @@ const Login = (props) => {
     return (
       
         
-  <div className="container h-100 mt-5" >
+  <div className="container  mt-5" >
     <div className="row  d-flex justify-content-center align-items-center h-100">
       <div className="col-xl-10  ">
         <div className="card rounded-3 text-black">
@@ -47,9 +47,8 @@ const Login = (props) => {
               <div className="card-body  p-md-4 mx-md-4">
 
                 <div className="text-center ">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
-                    style={{width: "185px"}} alt="logo"/>
-                  <h4 className="mt-1 mb-3 pb-1">WELCOME TO SECRET-BEAR</h4>
+              
+                  <h4 className="title mt-3 mb-3 pb-1">WELCOME TO<span className='title1'>SECRET</span> <span className='title2'>BEAR</span></h4>
                 </div>
 
                 <form onSubmit={handleSubmit}>
