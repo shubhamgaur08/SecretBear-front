@@ -24,6 +24,10 @@ const SubmitSecret = () => {
     // if (data !== undefined) {
     //   window.location.reload();
     // }
+  
+    if(data.error){
+      alert(data.error);
+    }
     
   };
  
